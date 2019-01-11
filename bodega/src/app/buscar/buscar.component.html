@@ -1,0 +1,39 @@
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <h2 class="card-title">Catálogo</h2>
+                    </div>
+                    <div class="col-3">
+                        <div class="busqueda">
+                            <h6>¿Qué estás buscando?</h6>
+                            
+                                <input type="text" 
+                                (keydown)="handleBuscar($event)"
+                                
+                                class="input" >
+                                           
+                              
+                                         
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container mt-4">
+                <div class="row mt-4">
+                    <div *ngFor="let producto of productos;index as i" class="col-lg-3 col-md-4 col-sm-12">
+                    <app-producto [nombre]='producto.nombre' [pId]='producto.id' [precio]='producto.precio' [cantidad]='producto.cantidad' ></app-producto>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    

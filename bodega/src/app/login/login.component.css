@@ -1,0 +1,42 @@
+#label-contrasena{
+    color: white;
+}
+
+#label-correo{
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+.mensaje{
+    color: red;    
+    font-weight: bold;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 330px;
+    padding: 250px 15px;
+    margin: 0 auto;
+
+}
+
+.boton-ingresar{
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    max-width: 400px;
+}
+
+.fondo{
+    background-image: url("../../assets/login-fondo.jpg");
+    height: 100vh;
+    width: 100%;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

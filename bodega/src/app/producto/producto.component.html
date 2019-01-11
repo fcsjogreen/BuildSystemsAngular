@@ -1,0 +1,42 @@
+
+  <div class="card mt-4">
+    
+      <img src="../../assets/{{nombre}}.jpg" class="card-img-top rounded imagen">
+    
+    <div class="card-body">
+      <h5 class="card-title text-left text-capitalize font-weight-bold">{{nombre}}</h5>
+      <h6 class="card-text text-left">Precio: {{precio}}</h6>
+      <h6 class="card-text text-left">Unidades disponibles: {{cantidad}}</h6>
+      <div class="row">
+        <div class="col-lg-5 col-md-4 text-center">
+          <button type="button" class="btn btn-primary ver-mas" (click)="handleVerMas();">Ver más</button>
+        </div>
+        <div class="col-lg-4 col-md-3 text-center">
+          <button type="button" class="btn btn-primary anadir" (click)="handleAnadirCompra();">Añadir</button>
+        </div>
+        <div class="col-3">
+          <!--Spinner-->
+          <div class="Spinner-Control d-flex flex-nowrap">
+            <div class="Spinner-Value-Container">
+              <div id="RoundSipnner" class="Spinner-Value">
+                {{numProductos}}
+              </div>
+            </div>
+            <div class="Spinner-UpDown">
+              <div class="Spinner-Button-Container">
+                <div id="increment" class="Spinner-Button border" (click)="handleIncrement();">
+                    &#x25B2;
+                </div>
+              </div>
+              <div class="Spinner-Button-Container">
+                <div id="decrement" class="Spinner-Button border" (click)="handleDecrement();">
+                    &#x25BC;
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Spinner-->
+        </div>
+      </div>
+    </div>
+  </div>

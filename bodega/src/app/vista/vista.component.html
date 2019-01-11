@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-title">
+      <h1 class="text-dark text-left text-capitalize font-weight-bold">{{nombre}}</h1>
+      <hr>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col">
+          
+            <img src="../../assets/{{nombre}}.jpg" alt={{nombre}} class="card-img-top img-thumbnail img-producto">
+          
+        </div>
+        <div class="col datos">
+          <p class="text-dark">Precio: $ {{precio}}</p>
+          <p class="text-dark">Unidades: {{cantidad}}</p>
+        </div>
+        
+    </div>
+    <button type="button" class="btn btn-primary btn-atras float-left" (click)="handleAtras()">Atrás</button>
+  </div>
+</div>

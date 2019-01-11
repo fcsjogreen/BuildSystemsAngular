@@ -1,0 +1,29 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light ">
+  <a class="navbar-brand" href="#">
+    La Bodega
+  </a>
+  <ul class="navbar-nav botones">
+    <li class="nav-item">
+      <a class="nav-link">
+        <img class="icono" src="../../assets/baseline_apps_black_18dp.png">
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="handleCompra();">
+        <img class="icono" src="../../assets/baseline_shopping_cart_black_18dp.png"><span *ngIf="badge>0" class="badge badge-pill badge-danger">{{badge}}</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a  class="nav-link">
+        <img class="icono" src="../../assets/baseline_save_alt_black_18dp.png">
+      </a>
+    </li>
+    <li class="nav-item">
+      <a  class="nav-link">
+        <img class="icono" src="../../src/assets/baselie_exit_to_aoo_black_18dp.png">
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>

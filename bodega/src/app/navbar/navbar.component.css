@@ -1,0 +1,9 @@
+.botones{
+    position: absolute;
+    right: 0px;    
+  }
+  
+  .icono {
+    width: 16px;
+    height: 16px;
+  }

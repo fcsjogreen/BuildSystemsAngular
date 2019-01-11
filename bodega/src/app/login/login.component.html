@@ -1,0 +1,23 @@
+<div class="container-fluid fondo">  
+  <div class="formulario">
+      <h1>Iniciar Sesión</h1>
+      <form>        
+        <div class="form-group">
+          <label id="label-correo" for="correo">Correo electrónico:</label>
+          <input name="username" [(ngModel)] = "newUser.nombre" type="email" class="form-control" placement="left" ngbTooltip="Ingrese su correo electrónico">
+        </div>
+        <div class="form-group">
+          <label id="label-contrasena" for="contrasena">Contraseña:</label>
+          <input name="password" [(ngModel)] = "newUser.contrasena" type="password" class="form-control" id="contrasena" placement="left" ngbTooltip="Ingrese su contraseña">
+        </div>
+        <label class="mensaje bg-light" *ngIf="errorIngreso">Ingrese nuevamente sus datos</label>
+        <div class="boton-ingresar">
+          <button type="button" class="btn-primary" (click)="validateLogin()">Ingresar</button>
+        </div>
+        
+      </form>
+      
+  </div> 
+      
+</div>
+

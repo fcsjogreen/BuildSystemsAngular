@@ -1,0 +1,31 @@
+<div class="container bg-white border border-dark mt-5">
+  <div class="row">
+    <div class="col">
+      <div class="card mt-3 mb-3">
+        <ul class="list-group list-group-flush">
+          
+          <div *ngFor="let producto of cart">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-3">
+                  <img src="../../assets/{{producto.producto}}.jpg" alt="" class="card-img-top img-carrito">
+                </div>
+                <div class="col-9">
+                  <h5 class="text-left text-capitalize font-weight-bold">{{producto.producto}}</h5>
+                  <h6 class="text-left">Unidades: {{producto.cantidad}}</h6>
+                </div>
+              </div>
+              <h6 class="text-left mt-2">Subtotal: ${{producto.subtotal}}</h6>
+            </li>
+          </div>
+
+        </ul>
+      </div>
+    </div>
+    <div class="col text-left">
+      <h1 class="text-dark">Total: {{total}}</h1>
+      <button type="button" class="btn btn-primary btn-cancelar" (click)="handleCancelar();">Cancelar</button>                                  
+      <button  type="button" class="btn btn-primary btn-pagar" (click)="handlePagar();">Pagar</button>
+    </div>
+  </div>
+</div>

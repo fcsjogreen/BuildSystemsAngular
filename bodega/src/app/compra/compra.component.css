@@ -1,0 +1,22 @@
+.btn-cancelar{
+    background-color: white;
+    border-color: black;
+    color: black;
+    margin-top: 10px;
+}
+
+.btn-cancelar:hover {
+    background-color: red;
+    color: white;
+}
+
+.btn-pagar:hover {
+    background-color: green ;
+    color: white;
+}
+.btn-pagar{
+    background-color: white;
+    border-color: black;
+    color: black;
+    margin-top: 10px;
+}
